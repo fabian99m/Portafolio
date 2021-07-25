@@ -7,24 +7,20 @@
     <link rel="stylesheet" href="style.css">
     <title>Portafolio</title>
     <script src="https://kit.fontawesome.com/c102f160c9.js" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
 </head>
 
 <body>
 
-    <nav id="navbar">
-
+    <div id="navbar">
 
         <div>
             <a href="#welcome-section"> About</a>
             <a href="#projects"> Work </a>
             <a href="#contact">Contact </a>
-
-
         </div>
 
-
-
-    </nav>
+    </div>
 
     <div id="welcome-section">
 
@@ -39,71 +35,71 @@
 
         <div id="cardprojects">
             <a href="https://codepen.io/freeCodeCamp/full/zNqgVx">
-                <div class="card">
+                <div class="card" ontouchstart="enter('c1')" ontouchend="out('c1')"  onmouseover="enter('c1')" onmouseout="out('c1')"  >
                     <figure>
                         <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute.jpg" alt="">
                     </figure>
                     <div>
-                        <h1>Tribute page</h1>
+                        <h1 id="c1">Tribute page</h1>
                     </div>
                 </div>
             </a>
 
             <a href="https://codepen.io/freeCodeCamp/full/qRZeGZ">
-                <div class="card">
+                <div class="card" onmouseover="enter('c2')" onmouseout="out('c2')">
                     <figure>
                         <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/random-quote-machine.png"
                             alt="">
                     </figure>
                     <div>
-                        <h1>Radom Quote Machine</h1>
+                        <h1 id="c2">Radom Quote Machine</h1>
                     </div>
                 </div>
             </a>
 
             <a href="https://codepen.io/freeCodeCamp/full/wgGVVX">
-                <div class="card">
+                <div class="card" onmouseover="enter('c3')" onmouseout="out('c3')">
                     <figure>
                         <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png" alt="">
                     </figure>
                     <div>
-                        <h1>JavaScript Calculator</h1>
+                        <h1 id="c3">JavaScript Calculator</h1>
                     </div>
                 </div>
             </a>
 
 
             <a href="https://codepen.io/freeCodeCamp/full/mVEJag">
-                <div class="card">
+                <div class="card" onmouseover="enter('c4')" onmouseout="out('c4')">
                     <figure>
                         <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg" alt="">
                     </figure>
                     <div>
-                        <h1>Mapa Data Across the Goble</h1>
+                        <h1 id="c4">Mapa Data Across the Goble</h1>
                     </div>
                 </div>
             </a>
 
             <a href="https://codepen.io/freeCodeCamp/full/wGqEga">
 
-                <div class="card">
+                <div class="card" onmouseover="enter('c5')" onmouseout="out('c5')">
                     <figure>
                         <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/wiki.png" alt="">
                     </figure>
                     <div>
-                        <h1>Wikipedia Viewer</h1>
+                        <h1 id="c5">Wikipedia Viewer</h1>
                     </div>
                 </div>
 
             </a>
 
             <a href="https://codepen.io/freeCodeCamp/full/KzXQgy">
-                <div class="card">
+                <div class="card" onmouseover="enter('c6')" onmouseout="out('c6')">
                     <figure>
                         <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tic-tac-toe.png" alt="">
                     </figure>
                     <div>
-                        <h1>Wikipedia Viewer</h1>
+                        <h1 id="c6">Wikipedia Viewer</h1>
                     </div>
                 </div>
             </a>
@@ -154,12 +150,12 @@
         </div>
 
         <footeri id="footer">
-            <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+            <p> All the projects and contact details given are real.</p>
             <p>© Created for Fabian Montes </p>
         </footer>
 
     </div>
-
+    
 </body>
 
 </html>

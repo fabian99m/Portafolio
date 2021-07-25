@@ -44,6 +44,7 @@ body{
     position: sticky;
     top: 0;
     align-content: center;
+   
 }
 
 #navbar div{
@@ -143,9 +144,9 @@ a, a:visited, a:hover, a:active {
     text-align: center;
     padding: 22.5px;
     font-size: 20px;
-    font-weight: lighter;
-    
+    font-weight: lighter; 
 }
+
 #cardprojects{
    display: flex;
    flex-wrap: wrap;
@@ -182,6 +183,7 @@ a, a:visited, a:hover, a:active {
     background-color:var(--color-secun);
     text-align: center;
     height: 100vh;
+    animation-play-state: paused;
 }
 
 
@@ -229,6 +231,15 @@ a, a:visited, a:hover, a:active {
 #info a{
     font-size: 22px;
 }
+
+#info a:hover{
+    transform: translate(0,17px);
+    transition-timing-function: ease-out;
+    transition-duration: 0.5s;
+    transition-delay: 0s;
+    
+}
+
 #redes{
     display: flex;
     flex-direction: column;
