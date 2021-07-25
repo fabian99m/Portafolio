@@ -1,0 +1,312 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+:root{
+    --color-prim:rgb(182, 28, 80);
+    --color-secun:#434647;
+    --color-ter:#2A5269;
+    --altura_nav:70px;
+}
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: grid;
+    grid-template-columns:auto;
+    /* grid-template-rows: 1fr; */
+    grid-template-areas:
+    "navbar" 
+    "welcome" 
+    "projects" 
+    "footer";
+}
+
+
+#navbar{
+    grid-area: navbar;
+    background-color: var(--color-prim);
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    height:auto;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    align-content: center;
+}
+
+#navbar div{
+    display: flex;
+    flex-direction: row;
+    margin-right: 2em;
+    align-items: flex-end;
+
+}
+
+#navbar div a{
+    padding:1em 1em;
+    height: 100%;
+    color: #ffff;
+    font-size: 20px;  
+}
+
+#navbar a:hover{
+    cursor: pointer;
+    background-color:var(--color-ter) ;
+}
+
+/* #navbar ul li a{
+        align-self: center;
+        justify-self: center;
+       
+        padding:0 inherit;
+        
+        text-align: center;
+} */
+
+#welcome-section{
+    grid-area: welcome;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+   
+}
+
+#welcome-section > h1{
+    font-size: 60px;
+    color: #ffff;
+    text-align: center;
+}
+
+#welcome-section h2{
+    color:  var(--color-prim);
+    font-weight:lighter;
+    font-style: italic;
+    font-size: 28px;
+
+}
+
+#projects{
+    grid-area: projects;
+    background-color:var(--color-ter);
+ 
+}
+
+#projects > h1{
+    font-size: 40px;
+    margin: 1.5em auto;
+    text-align: center;
+    padding-bottom: 10px solid 3px;
+    border-bottom-style: solid;
+    border-bottom-width: 1.5px;
+    width: fit-content;
+    color: #ffff;
+}
+
+figure img{
+    
+    height: 400px;
+    width: 415px;
+}
+
+
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+  }
+
+.card div {
+   
+   background-color: #434647;
+}
+
+.card{
+    margin: 1em 1.5em;
+}
+
+.card h1{
+    color: #fff;
+    text-align: center;
+    padding: 22.5px;
+    font-size: 20px;
+    font-weight: lighter;
+    
+}
+#cardprojects{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;   
+   align-content: center;
+}
+
+
+#pbutton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pbutton a{
+    height:45px;
+    width: 150px;
+    color: #fff;
+    padding:10px;
+    background-color:#434647 ;
+    margin-bottom: 4em;
+    margin-top: 2.5em;
+    font-size: 18px;
+    text-align: center;
+}
+
+#pbutton a:hover{
+    background-color: var(--color-prim);
+    cursor: pointer;
+}
+
+#contact{
+    grid-area: footer;
+    background-color:var(--color-secun);
+    text-align: center;
+    height: 100vh;
+}
+
+
+#contact h1{
+    font-size: 50px;
+    color: #ffff;
+    text-align: center;
+    margin: 2.5em auto 0.2em auto;
+}
+
+#contact h2{
+    font-size: 20px;
+    color: #ffff;
+    font-weight: lighter;
+    font-style: italic;
+    margin: 0 auto 3em auto;
+}
+
+
+#info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 4em;
+}
+
+#info i {
+    color: #fff;
+    margin:0 0.2em;
+}
+
+#info li {
+    color: #fff;
+    margin: 0 2em;
+   
+}
+#info ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#info a{
+    font-size: 22px;
+}
+#redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    background-color:var(--color-secun);
+}
+#footer{
+    height:15%;
+    background-color:var(--color-secun);
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 5px solid var(--color-prim);
+}
+#footer p{
+    /* margin:2em auto; */
+    color:#ffff;
+}
+
+@media screen and (max-width:745px) {
+    #navbar div{
+        width: 100%;
+        justify-content: center;
+        margin-right: 0;   
+    }
+
+    #cardprojects{
+        flex-direction: column;
+        align-content:space-around;
+        align-items: center;
+     }
+
+     figure img{
+        height: auto;
+        width: 100%;
+    }
+
+    #projects > h1{
+        margin: 1.5em 0.5em;
+    }
+
+    #info ul{
+        flex-direction: column;
+        align-items:center;
+        flex-wrap: wrap;
+        margin-top: 0em;
+        
+    }
+
+    #info a{
+        margin:0.5em auto;
+    }
+
+    #contact h2{
+        font-size: 20px;
+        color: #ffff;
+        font-weight: lighter;
+        font-style: italic;
+        margin: 0 auto 1em auto;
+    }
+
+
+    #redes{
+        height: auto;
+     }
+ 
+    #footer{
+        flex-direction: column;
+        height:min-content;
+        padding:2em;
+        
+    }
+   
+    #footer p{
+        justify-self:center;
+        align-self: center;
+        margin: 0.5em auto;
+    }
+}
