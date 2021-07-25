@@ -67,14 +67,6 @@ body{
     background-color:var(--color-ter) ;
 }
 
-/* #navbar ul li a{
-        align-self: center;
-        justify-self: center;
-       
-        padding:0 inherit;
-        
-        text-align: center;
-} */
 
 #welcome-section{
     grid-area: welcome;
@@ -233,11 +225,11 @@ a, a:visited, a:hover, a:active {
 }
 
 #info a:hover{
-    transform: translate(0,17px);
+    transform: translate(0,10px);
     transition-timing-function: ease-out;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
     transition-delay: 0s;
-    
+
 }
 
 #redes{
@@ -319,5 +311,10 @@ a, a:visited, a:hover, a:active {
         justify-self:center;
         align-self: center;
         margin: 0.5em auto;
+    }
+
+    #info a:hover{
+        transform: none;
+    
     }
 }
